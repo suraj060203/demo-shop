@@ -1,9 +1,11 @@
 import './ItemDate.css';
 
-function ItemDate(){
-    const date = 20;
-    const month = 'June';
-    const year = 2018;
+function ItemDate(props){
+    const date = 20; // You can replace this with props.day if you want to use dynamic values
+    // const date = props.day; // Uncomment this line to use the day prop
+    const month = props.month || 'January'; // Default to 'January' if month prop is not provided
+    // const month = 'January'; // Uncomment this line to use a static month value
+    const year = props.year;
     return(
         <div className='item-date'>
             <spam> {date} </spam>
