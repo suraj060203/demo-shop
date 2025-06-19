@@ -11,6 +11,8 @@ function ItemDate(props){
             <spam> {date} </spam>
             <spam> {month} </spam>
             <spam> {year} </spam>
+            {props.children}
+            {props.className}
         </div>
     );
 }
