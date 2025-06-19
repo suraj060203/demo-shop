@@ -1,11 +1,14 @@
 import './ItemDate.css';
 
 function ItemDate(){
+    const date = 20;
+    const month = 'June';
+    const year = 2018;
     return(
         <div className='item-date'>
-            <spam> 20 </spam>
-            <spam> June </spam>
-            <spam> 2018 </spam>
+            <spam> {date} </spam>
+            <spam> {month} </spam>
+            <spam> {year} </spam>
         </div>
     );
 }

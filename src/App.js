@@ -7,6 +7,13 @@ function App() {
     <div>
       <Item></Item>
       <ItemDate></ItemDate>
+
+      <Item></Item>
+      <ItemDate></ItemDate>
+
+      <Item></Item>
+      <ItemDate></ItemDate>
+      
       <div className="App">
         <h1>Hello Suraj!</h1>
       </div>
