@@ -1,10 +1,15 @@
 import './App.css';
+import Item from './components/Item';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello Suraj!</h1>
+    <div>
+      <Item></Item>
+      <div className="App">
+        <h1>Hello Suraj!</h1>
+      </div>
     </div>
+
   );
 }
 
