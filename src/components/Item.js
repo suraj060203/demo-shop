@@ -1,6 +1,8 @@
+import './Item.css';
+
 function Item(){
     return(
-        <p>Nirma</p>
+        <p className="nirma">Nirma</p>
     );
 }
 
