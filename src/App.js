@@ -1,6 +1,7 @@
 import './App.css';
 import Item from './components/Item';
 import ItemDate from './components/ItemDate';
+import Card from './components/Card';
 
 function App() {
   const ItmeName2 = "Tide"; // You can change this to any other name you want
@@ -27,18 +28,20 @@ function App() {
 
   return (
     <div>
-      <Item name={response[0].itemName}></Item>
-      <ItemDate day={response[0].itemDate} month={response[0].itemMonth} year={response[0].itemYear}></ItemDate>
+      <Card>
+        <Item name={response[0].itemName}> Hello Ji! I'm your first item</Item>
+        <ItemDate day={response[0].itemDate} month={response[0].itemMonth} year={response[0].itemYear}></ItemDate>
 
-      <Item name={ItmeName2}></Item>
-      <ItemDate day="23" month="June" year="2009"></ItemDate>
+        <Item name={ItmeName2}></Item>
+        <ItemDate day="23" month="June" year="2009"></ItemDate>
 
-      <Item name="Surf Excel"></Item>
-      <ItemDate day="6" month="July" year="2000"></ItemDate>
-      
-      <div className="App">
-        <h1>Hello Suraj!</h1>
-      </div>
+        <Item name="Surf Excel"></Item>
+        <ItemDate day="6" month="July" year="2000"></ItemDate>
+        
+        <div className="App">
+          <h1>Hello Suraj!</h1>
+        </div>
+      </Card>
     </div>
 
   );

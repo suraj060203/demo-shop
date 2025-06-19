@@ -4,7 +4,10 @@ function Item(props){
     const ItmeName = props.name;
     console.log(ItmeName);
     return(
-        <p className="nirma">{ItmeName}</p>
+        <div>
+            <p className="nirma">{ItmeName}</p>
+            {props.children}
+        </div>
     );
 }
 
